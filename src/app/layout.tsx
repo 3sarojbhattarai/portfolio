@@ -1,17 +1,11 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-import { Navigation } from "@/components/navigation"
-
-const _geist = Geist({ subsets: ["latin"] })
-const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Saroj Bhattarai - Software Engineer Portfolio",
-  description: "Full-stack software engineer specializing in modern web applications and scalable solutions",
-  generator: "v0.app",
+  title: "Saroj Bhattarai - Software Engineer",
+  description: "Full-stack software engineer with 7+ years of experience in Python, JS, Go, and Rust.",
   icons: {
     icon: [
       {
@@ -38,11 +32,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`font-sans antialiased`}>
-        <Navigation />
+      <body className="antialiased">
         {children}
         <Analytics />
       </body>
     </html>
   )
 }
+
