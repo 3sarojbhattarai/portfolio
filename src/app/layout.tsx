@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Saroj Bhattarai",
     description: "Senior Software Engineer with 7+ years of experience. Expert in Python, JS, Go, and Rust.",
-    url: "https://3saroj.com.np",
+    url: "https://www.3saroj.com.np",
     siteName: "Saroj Bhattarai Portfolio",
     images: [
       {

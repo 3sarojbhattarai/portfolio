@@ -6,7 +6,7 @@ export default function PortfolioPage() {
     "@type": "Person",
     "name": "Saroj Bhattarai",
     "jobTitle": "Software Engineer",
-    "url": "https://sarojbhattarai.me",
+    "url": "https://www.3saroj.com.np",
     "sameAs": [
       "https://github.com/3sarojbhattarai",
       "https://twitter.com/3sarojbhattarai",
@@ -41,9 +41,10 @@ export default function PortfolioPage() {
               saroj bhattarai
             </h1>
             <p className="text-lg md:text-xl font-medium leading-relaxed text-black/80">
-              Software Engineer with more than 7 years of professional experience. 
-              Worked for an innovative startup to large enterprise products. 
-              Familiar with both remote and in-office roles.
+              I’m a Software Engineer from Nepal with over 7 years of experience building digital
+              products across startups and enterprise environments. I enjoy turning complex ideas
+              into simple, reliable solutions and am passionate about creating technology that makes
+              a meaningful impact.
             </p>
           </header>
 
