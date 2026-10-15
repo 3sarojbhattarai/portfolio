@@ -1,7 +1,6 @@
 import type { Metadata } from "next"
 import PageShell from "../../components/PageShell"
 import LinkCard from "../../components/LinkCard"
-import { CalculatorIcon, CodeIcon, WrenchIcon } from "../../components/icons"
 
 export const metadata: Metadata = {
   title: "Products | Saroj Bhattarai",
@@ -9,9 +8,9 @@ export const metadata: Metadata = {
 }
 
 const products = [
-  { name: "stools", href: "https://stools.saroj3.com.np/", label: "stools.saroj3.com.np", icon: <WrenchIcon /> },
-  { name: "Nepal Income Tax Calculator", href: "https://taxcalculator.saroj3.com.np/", label: "taxcalculator.saroj3.com.np", icon: <CalculatorIcon /> },
-  { name: "Dev Tools", href: "https://devtools.saroj3.com.np/", label: "devtools.saroj3.com.np", icon: <CodeIcon /> },
+  { name: "stools", href: "https://stools.saroj3.com.np/", label: "stools.saroj3.com.np", icon: "/products/stools.svg" },
+  { name: "Nepal Income Tax Calculator", href: "https://taxcalculator.saroj3.com.np/", label: "taxcalculator.saroj3.com.np", icon: "/products/taxcalculator.svg" },
+  { name: "Dev Tools", href: "https://devtools.saroj3.com.np/", label: "devtools.saroj3.com.np", icon: "/products/devtools.svg" },
 ]
 
 export default function ProductsPage() {
