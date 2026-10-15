@@ -1,12 +1,14 @@
 import type { Metadata } from "next"
 import PageShell from "../../components/PageShell"
 import LinkCard from "../../components/LinkCard"
+import { pageMetadata } from "../../lib/seo"
 import { GitHubIcon } from "../../components/icons"
 
-export const metadata: Metadata = {
-  title: "Open Source | Saroj Bhattarai",
-  description: "Open source projects by Saroj Bhattarai.",
-}
+export const metadata: Metadata = pageMetadata({
+  title: "Open Source",
+  description: "Open source projects by Saroj Bhattarai: gantry, treefile, applytics, sarhash and sarhash-core.",
+  path: "/oss",
+})
 
 const repos = [
   { name: "gantry", description: "A Docker tool for inspecting and managing a local Docker daemon." },

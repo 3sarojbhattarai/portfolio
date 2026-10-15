@@ -1,12 +1,14 @@
 import type { Metadata } from "next"
 import PageShell from "../../components/PageShell"
 import LinkCard from "../../components/LinkCard"
+import { pageMetadata } from "../../lib/seo"
 import { GitHubIcon, SubstackIcon, TwitterIcon } from "../../components/icons"
 
-export const metadata: Metadata = {
-  title: "Contact | Saroj Bhattarai",
-  description: "Get in touch with Saroj Bhattarai.",
-}
+export const metadata: Metadata = pageMetadata({
+  title: "Contact",
+  description: "Get in touch with Saroj Bhattarai about roles or projects.",
+  path: "/contact",
+})
 
 const channels = [
   { name: "Twitter / X", href: "https://twitter.com/3sarojbhattarai", label: "@3sarojbhattarai", description: "Send me a message about a role or project.", icon: <TwitterIcon /> },

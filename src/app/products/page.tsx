@@ -1,11 +1,13 @@
 import type { Metadata } from "next"
 import PageShell from "../../components/PageShell"
 import LinkCard from "../../components/LinkCard"
+import { pageMetadata } from "../../lib/seo"
 
-export const metadata: Metadata = {
-  title: "Products | Saroj Bhattarai",
-  description: "Products built by Saroj Bhattarai.",
-}
+export const metadata: Metadata = pageMetadata({
+  title: "Products",
+  description: "Products built and maintained by Saroj Bhattarai: stools, Nepal Income Tax Calculator and Dev Tools.",
+  path: "/products",
+})
 
 const products = [
   { name: "stools", href: "https://stools.saroj3.com.np/", label: "stools.saroj3.com.np", icon: "/products/stools.svg" },

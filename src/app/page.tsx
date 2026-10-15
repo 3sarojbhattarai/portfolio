@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { SITE_URL } from "../lib/seo"
 
 const skills = [
   { title: "Languages", items: ["Python", "JavaScript", "Go", "Rust"] },
@@ -13,7 +14,7 @@ export default function PortfolioPage() {
     "@type": "Person",
     "name": "Saroj Bhattarai",
     "jobTitle": "Software Engineer",
-    "url": "https://www.3saroj.com.np",
+    "url": SITE_URL,
     "sameAs": [
       "https://github.com/3sarojbhattarai",
       "https://twitter.com/3sarojbhattarai",
@@ -47,13 +48,6 @@ export default function PortfolioPage() {
         {/* Content */}
         <div className="max-w-xl space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-700 delay-150 fill-mode-both">
           <header className="space-y-5">
-            <span className="inline-flex items-center gap-2 rounded-full border border-black/10 bg-white px-3 py-1 text-xs font-medium text-black/60">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
-              </span>
-              Open to new opportunities
-            </span>
             <h1 className="text-4xl md:text-6xl font-semibold tracking-tight">
               Saroj Bhattarai
             </h1>
