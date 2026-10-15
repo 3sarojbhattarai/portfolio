@@ -75,8 +75,8 @@
   * {
     @apply border-border outline-ring/50;
   }
-  html, body {
-    @apply h-full overflow-hidden;
+  html {
+    @apply scroll-smooth;
   }
   body {
     @apply bg-white text-black antialiased selection:bg-black selection:text-white;
@@ -89,6 +89,13 @@
 @layer utilities {
   .glass {
     @apply bg-background/70 backdrop-blur-md border-b border-border/50;
+  }
+  .bg-grid {
+    background-image:
+      linear-gradient(to right, rgb(0 0 0 / 0.04) 1px, transparent 1px),
+      linear-gradient(to bottom, rgb(0 0 0 / 0.04) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 40%, transparent 100%);
   }
   .text-balance {
     text-wrap: balance;

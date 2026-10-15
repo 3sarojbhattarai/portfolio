@@ -1,16 +1,17 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
+import Navbar from "../components/Navbar"
 import "./globals.css"
 
 export const metadata: Metadata = {
   title: "Saroj Bhattarai | Software Engineer",
-  description: "Senior Software Engineer with 7+ years of experience in Python, JS, Go, and Rust. Expert in building scalable web applications and distributed systems.",
+  description: "Senior Software Engineer with 8+ years of experience in Python, JS, Go, and Rust. Expert in building scalable web applications and distributed systems.",
   keywords: ["Saroj Bhattarai", "Software Engineer", "Full Stack Developer", "Nepal", "Python", "JavaScript", "Go", "Rust", "AWS", "Kubernetes"],
   authors: [{ name: "Saroj Bhattarai" }],
   openGraph: {
     title: "Saroj Bhattarai",
-    description: "Senior Software Engineer with 7+ years of experience. Expert in Python, JS, Go, and Rust.",
+    description: "Senior Software Engineer with 8+ years of experience. Expert in Python, JS, Go, and Rust.",
     url: "https://www.3saroj.com.np",
     siteName: "Saroj Bhattarai Portfolio",
     images: [
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Saroj Bhattarai | Software Engineer",
-    description: "Senior Software Engineer with 7+ years of experience in Python, JS, Go, and Rust.",
+    description: "Senior Software Engineer with 8+ years of experience in Python, JS, Go, and Rust.",
     images: ["/profile.jpeg"],
     creator: "@3sarojbhattarai",
   },
@@ -45,6 +46,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="antialiased">
+        <div aria-hidden className="bg-grid pointer-events-none fixed inset-0 -z-10" />
+        <Navbar />
         {children}
         <Analytics />
       </body>
