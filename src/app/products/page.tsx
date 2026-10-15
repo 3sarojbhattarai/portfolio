@@ -5,12 +5,12 @@ import { pageMetadata } from "../../lib/seo"
 
 export const metadata: Metadata = pageMetadata({
   title: "Products",
-  description: "Products built and maintained by Saroj Bhattarai: stools, Nepal Income Tax Calculator and Dev Tools.",
+  description: "Products built and maintained by Saroj Bhattarai: fileworks, Nepal Income Tax Calculator and Dev Tools.",
   path: "/products",
 })
 
 const products = [
-  { name: "stools", href: "https://stools.saroj3.com.np/", label: "stools.saroj3.com.np", icon: "/products/stools.svg" },
+  { name: "fileworks", href: "https://fileworks.saroj3.com.np/", label: "fileworks.saroj3.com.np", icon: "/products/fileworks.svg" },
   { name: "Nepal Income Tax Calculator", href: "https://taxcalculator.saroj3.com.np/", label: "taxcalculator.saroj3.com.np", icon: "/products/taxcalculator.svg" },
   { name: "Dev Tools", href: "https://devtools.saroj3.com.np/", label: "devtools.saroj3.com.np", icon: "/products/devtools.svg" },
 ]
