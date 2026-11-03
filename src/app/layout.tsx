@@ -1,7 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
 import { Analytics } from "@vercel/analytics/next"
-import Navbar from "../components/Navbar"
 import { SITE_NAME, SITE_URL, pageMetadata } from "../lib/seo"
 import "./globals.css"
 
@@ -32,7 +31,6 @@ export default function RootLayout({
     <html lang="en">
       <body className="antialiased">
         <div aria-hidden className="bg-grid pointer-events-none fixed inset-0 -z-10" />
-        <Navbar />
         {children}
         <Analytics />
       </body>
